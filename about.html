@@ -1,41 +1,81 @@
-Hier is een simpele About Me pagina zonder CSS, puur HTML:
-
 <!DOCTYPE html>
-<html lang="nl">
+    <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over Mij</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            header {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+            section {
+                padding: 20px;
+                margin: 20px;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            img {
+                width: 150px;
+                border-radius: 50%;
+            }
+            footer {
+                text-align: center;
+                padding: 15px;
+                background-color: #333;
+                color: white;
+                margin-top: 20px;
+            }
+            .social-links a {
+                margin: 0 10px;
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+            }
+        </style>
 </head>
 <body>
 
-    <h1>mijn about me</h1>
+    <header>
+        <h1>Groep VIVES</h1>
+        <p>Werkplek Leren</p>
+    </header>
 
-
-    <h2>Over mij</h2>
-    <p>
-        Ik ben iemand die graag nieuwe dingen leert en altijd nieuwsgierig is naar hoe dingen werken.
-        Technologie, creativiteit en innovatie vind ik super interessant.
-    </p>
-
-    <h2>Mijn hobby's</h2>
-    <ul>
-        <li>Gamen</li>
-        <li>Sporten</li>
-        <li>Films kijken</li>
-        <li>Programmeren</li>
-    </ul>
-
-    <h2>Favoriete quote</h2>
-    <p>
-        "Blijf groeien en blijf jezelf uitdagen."
-    </p>
-
-    <h2>Contact</h2>
-    <p>
-        Je kunt mij bereiken via:
-        <a href="mailto:sam@email.com">sam@email.com</a>
-    </p>
+        <section>
+            <h2>Over Ons</h2>
+            <p>
+                Wij zijn studenten van VIVES. Dit is een opdracht.
+            </p>
+        </section>
+        <section>
+            <h2>Onze Vaardigheden</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Informatie</h2>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">Email</a>
+            </div>
+        </section>
+            <footer>
+                <p>&copy; 2026 VIVES. Alle rechten voorbehouden.</p>
+            </footer>
 
 </body>
 </html>
