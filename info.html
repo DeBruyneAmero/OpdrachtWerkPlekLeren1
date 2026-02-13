@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zwevende Eilanden Explorer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#87CEEB, #E0FFFF);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: rgba(0,0,0,0.6);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 30px;
+        }
+        .island-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        button {
+            background: #4CAF50;
+            border: none;
+            padding: 12px 20px;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: rgba(0,0,0,0.5);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🌍 Zwevende Eilanden Explorer</h1>
+    <p>Ontdek mysterieuze eilanden die boven de wolken zweven</p>
+</header>
+
+<main>
+    <section class="island-card">
+        <h2>Eiland Nimbus</h2>
+        <p>Bekend om zijn eeuwige mist en zwevende kristallen.</p>
+        <button onclick="ontdekEiland('Nimbus')">Ontdek meer</button>
+    </section>
+
+    <section class="island-card">
+        <h2>Eiland Aurora</h2>
+        <p>Hier zie je dag en nacht het noorderlicht.</p>
+        <button onclick="ontdekEiland('Aurora')">Ontdek meer</button>
+    </section>
+
+    <section class="island-card">
+        <h2>Eiland Verdantia</h2>
+        <p>Een jungle-eiland met gigantische lichtgevende planten.</p>
+        <button onclick="ontdekEiland('Verdantia')">Ontdek meer</button>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Zwevende Eilanden Explorer</p>
+</footer>
+
+<script>
+function ontdekEiland(naam) {
+    alert("Je start een expeditie naar eiland " + naam + "!");
+}
+</script>
+
+</body>
+</html>
